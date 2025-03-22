@@ -43,6 +43,8 @@ try {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Profile</title>
     <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
 
@@ -71,7 +73,11 @@ try {
         <a href="edit_profile.php" class="action-button">Edit Profile</a>
     </div>
 
-    <a href="logout.php" class="logout-button">Log Out</a>
+    <div class="logout-icon">
+    <a href="logout.php">
+        <i class="fas fa-sign-out-alt"></i>
+    </a>
+</div>
 </div>
 
 <p class="quote">"Good food is the foundation of genuine happiness." – Auguste Escoffier</p>

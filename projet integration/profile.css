@@ -65,18 +65,19 @@ p {
     background-color: #8c2e2d;
 }
 
-.logout-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    color: #ffffff;
-    background-color: #a63d40;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
+.logout-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #a63d40; /* This sets the icon color */
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.logout-button:hover {
-    background-color: #8c2e2d;
+.logout-icon:hover {
+    transform: scale(1.1); /* Slightly enlarges the icon on hover */
+    color: #8c2e2d; /* Changes the color on hover */
 }
 
 .quote {

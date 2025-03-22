@@ -1,0 +1,79 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/food.jpeg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Search Container */
+.search-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+}
+
+/* Heading */
+.search-container h1 {
+    font-size: 28px;
+    color: #a63d40;
+    margin-bottom: 10px;
+}
+
+/* Subheading */
+.search-container p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Search Form */
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Input Field */
+.search-input {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #a63d40;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.search-input:focus {
+    border-color: #8c2e2d;
+    box-shadow: 0 0 5px #a63d40;
+}
+
+.search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #a63d40;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none; /* Removes the underline */
+}
+
+.search-button:hover {
+    background-color: #8c2e2d;
+}
+

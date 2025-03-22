@@ -1,4 +1,7 @@
 <?php
+// Start a session for managing user login state
+session_start();
+
 // Connect to the database
 $conn = new mysqli("localhost", "root", "", "notrebase"); // Change the database credentials if necessary
 
@@ -42,8 +45,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bind_param("ssss", $firstname, $lastname, $email, $hashed_password);
 
         if ($stmt->execute()) {
-            echo "<script>alert('Registration successful! You can now log in.');</script>";
-            header("Location: signin.php"); // Redirect to signin page
+            // Automatically log the user in after successful registration
+            $_SESSION['user_id'] = $conn->insert_id; // Get the newly created user's ID
+            $_SESSION['firstname'] = $firstname;
+            $_SESSION['lastname'] = $lastname;
+
+            // Redirect to the index page (index1.php)
+            header("Location: index1.php");
             exit();
         } else {
             echo "<script>alert('Error: Could not register. Please try again.');</script>";
@@ -51,5 +59,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->close();
     }
 }
+
 $conn->close();
 ?>
