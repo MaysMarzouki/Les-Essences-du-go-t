@@ -16,7 +16,7 @@
     <div class="banner-right button-container">
       <button class="button" title="Favoris"><i class="fas fa-heart"></i></button>
       <button class="button" title="Recherche"><i class="fas fa-search"></i></button>
-      <a href="signin.php">
+      <a href="profile.php">
     <button class="button" title="Mon Compte"><i class="fas fa-user"></i></button>
 </a>
     </div>
